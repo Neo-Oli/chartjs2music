@@ -209,7 +209,7 @@ var scrubX = function scrubX(data) {
     // console.log("not grouped");
     // Not grouped
     blackboard.forEach(function (item, x) {
-      if (_typeof(item) === "object" && "x" in item) {
+      if (_typeof(item) === "object" && item !== null && "x" in item) {
         labels.push(item.x);
         item.x = x;
       }

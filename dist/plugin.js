@@ -164,7 +164,7 @@ var chartjs2music = (function (c2mChart) {
             // console.log("not grouped");
             // Not grouped
             blackboard.forEach((item, x) => {
-                if (typeof item === "object" && "x" in item) {
+                if (typeof item === "object" && item !== null && "x" in item) {
                     labels.push(item.x);
                     item.x = x;
                 }
